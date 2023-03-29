@@ -1,0 +1,33 @@
+$color-primary: red;
+$color-secondary:green;
+$color-tertiary: blue;
+.container{
+    border: 1px solid $color-primary;
+    display: flex;
+    flex-direction: column;
+    .exercise-title{
+        color: $color-secondary;
+        text-decoration: underline;
+        text-align: center;
+    }
+}
+
+section {
+    display: flex;
+    margin: 1rem;
+}
+
+article {
+    border: 1px solid $color-secondary;
+    padding: 0.5rem;
+    .first, .third {
+        color: $color-tertiary;
+    }
+    .second, .fourth {
+        color: $color-primary;
+    }
+    p {
+        text-align: center;
+    }
+
+}

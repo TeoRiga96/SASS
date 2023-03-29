@@ -1,0 +1,31 @@
+.container {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+.container .exercise-title {
+  color: green;
+  text-decoration: underline;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  margin: 1rem;
+}
+
+article {
+  border: 1px solid green;
+  padding: 0.5rem;
+}
+article .first, article .third {
+  color: blue;
+}
+article .second, article .fourth {
+  color: red;
+}
+article p {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

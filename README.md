@@ -1,3 +1,5 @@
+Non ho capito cosa intende per "creare un modulo per ogni variabile dichiarata". intanto ho aggiunto la funzione che porta le unità in rem. 
+
 
 Modify the exercise 2 code about mixin by creating a module for all declared variables.
 Then, create a module with a function. This function should accept a number as parameter and return the value converted into rem. 1rem is equal to 16px

@@ -1,0 +1,68 @@
+body div {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.625rem;
+}
+body div h1, body div h2 {
+  text-align: center;
+  color: green;
+  text-decoration: underline blue;
+}
+body div span {
+  justify-content: center;
+  display: flex;
+}
+body div h2 {
+  text-decoration: none;
+  border: 1px solid red;
+  padding: 1rem;
+  width: 30vw;
+}
+body div section:first-of-type {
+  justify-content: center;
+  display: flex;
+}
+body div section:first-of-type article:nth-child(odd) {
+  display: flex;
+}
+body div section:first-of-type article:nth-child(odd) p {
+  color: blue;
+  border: green 1px solid;
+  font-size: 1rem;
+  display: flex;
+  padding: 1rem;
+  text-align: center;
+  margin: 0px;
+}
+body div section:first-of-type article:nth-child(even) {
+  display: flex;
+}
+body div section:first-of-type article:nth-child(even) p {
+  color: red;
+  border: green 1px solid;
+  font-size: 1rem;
+  display: flex;
+  padding: 1rem;
+  text-align: center;
+  margin: 0rem;
+}
+body div section:last-child {
+  display: flex;
+  justify-content: center;
+}
+body div section:last-child article {
+  display: flex;
+}
+body div section:last-child article p {
+  color: green;
+  border: blue 1px solid;
+  font-size: 24px;
+  display: flex;
+  text-align: center;
+  padding: 1rem;
+  margin: 0.625rem 0px 0px 0px;
+}
+
+/*# sourceMappingURL=style.css.map */

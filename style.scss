@@ -1,15 +1,13 @@
+@use "function.scss";
+@import "variable";
+
+
 @mixin article ($color, $border-color, $font-size) {
     color: $color;
     border: $border-color;
     font-size: $font-size;
     display: flex;
 }
-
-@function convertitore_rem-calc($size:1px) {
-    $rem-size: ($size * 1) / 16;
-    @return $rem-size + (rem);
-}
-
 
 body{
     
@@ -18,7 +16,7 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: convertitore_rem-calc(10);
+        padding: function.convertitore_rem-calc(10);
         h1 {
             text-align: center;
             color: green;
@@ -32,7 +30,7 @@ body{
                 display: flex;
                p {
                     @include article(blue, green 1px solid, 1rem);
-                    padding: convertitore_rem-calc(16);
+                    padding: function.convertitore_rem-calc(16);
                     text-align: center;
                     margin: 0px;
                 } 
@@ -41,9 +39,9 @@ body{
                 display: flex;
                 p {
                     @include article(red, green 1px solid, 1rem);
-                    padding: convertitore_rem-calc(16);
+                    padding: function.convertitore_rem-calc(16);
                     text-align: center;
-                    margin: convertitore_rem-calc(0);
+                    margin: function.convertitore_rem-calc(0);
                 }
             }
         }
@@ -56,8 +54,8 @@ body{
                 p {
                     @include article(green, blue 1px solid, 24px);
                     text-align: center;
-                    padding: convertitore_rem-calc(16);
-                    margin: convertitore_rem-calc(10) 0px 0px 0px;
+                    padding: function.convertitore_rem-calc(16);
+                    margin: function.convertitore_rem-calc(10) 0px 0px 0px;
                       
                 }
              

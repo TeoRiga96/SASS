@@ -1,0 +1,67 @@
+@mixin article ($color, $border-color, $font-size) {
+    color: $color;
+    border: $border-color;
+    font-size: $font-size;
+    display: flex;
+}
+
+@function convertitore_rem-calc($size:1px) {
+    $rem-size: ($size * 1) / 16;
+    @return $rem-size + (rem);
+}
+
+
+body{
+    
+    div {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: convertitore_rem-calc(10);
+        h1 {
+            text-align: center;
+            color: green;
+            text-decoration: underline blue;
+        }
+        section:first-of-type {
+            
+            justify-content: center;
+            display: flex;
+            article:nth-child(odd) {
+                display: flex;
+               p {
+                    @include article(blue, green 1px solid, 1rem);
+                    padding: convertitore_rem-calc(16);
+                    text-align: center;
+                    margin: 0px;
+                } 
+            }
+            article:nth-child(even){
+                display: flex;
+                p {
+                    @include article(red, green 1px solid, 1rem);
+                    padding: convertitore_rem-calc(16);
+                    text-align: center;
+                    margin: convertitore_rem-calc(0);
+                }
+            }
+        }
+        section:last-child {
+            display: flex;
+            justify-content:center;
+            
+            article {
+                display: flex;
+                p {
+                    @include article(green, blue 1px solid, 24px);
+                    text-align: center;
+                    padding: convertitore_rem-calc(16);
+                    margin: convertitore_rem-calc(10) 0px 0px 0px;
+                      
+                }
+             
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+// file di prova
+
+@mixin color-back() {
+    color: red;
+    background-color: blue;
+}
+
+@function box-generator($i) {
+    
+    @if $i == 10 {
+        @return color-back;
+    }
+  
+    
+}
